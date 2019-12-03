@@ -36,6 +36,7 @@ namespace RainbowMage.OverlayPlugin.EventSources
         public Single PosZ;
 
         public string Distance;
+        public byte EffectiveDistance;
 
         public List<EffectEntry> Effects;
 
@@ -336,6 +337,9 @@ namespace RainbowMage.OverlayPlugin.EventSources
             [FieldOffset(0x8C)]
             public byte Type;
 
+            [FieldOffset(0x92)]
+            public byte EffectiveDistance;
+
             [FieldOffset(0xA0)]
             public Single PosX;
 
@@ -394,6 +398,7 @@ namespace RainbowMage.OverlayPlugin.EventSources
                     ID = mem.ID,
                     OwnerID = mem.OwnerID == emptyID ? 0 : mem.OwnerID,
                     Type = (ObjectType)mem.Type,
+                    EffectiveDistance = mem.EffectiveDistance,
                     PosX = mem.PosX,
                     PosY = mem.PosY,
                     PosZ = mem.PosZ,
