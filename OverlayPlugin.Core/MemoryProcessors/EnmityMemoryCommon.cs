@@ -92,6 +92,16 @@ namespace RainbowMage.OverlayPlugin.MemoryProcessors
         public bool isOwner;
     }
 
+    [Serializable]
+    public class EnmityHudEntry
+    {
+        public int Order;
+        public uint ID;
+        public uint HPPercent;
+        public uint EnmityPercent;
+        public uint CastPercent;
+    }
+
     public abstract class EnmityMemory
     {
         abstract public bool IsValid();
@@ -103,5 +113,6 @@ namespace RainbowMage.OverlayPlugin.MemoryProcessors
         abstract public List<EnmityEntry> GetEnmityEntryList(List<Combatant> combatantList);
         abstract public unsafe List<AggroEntry> GetAggroList(List<Combatant> combatantList);
         abstract public bool GetInCombat();
+        abstract public List<EnmityHudEntry> GetEnmityHudEntries();
     }
 }
