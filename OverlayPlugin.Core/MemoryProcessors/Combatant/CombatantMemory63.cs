@@ -205,7 +205,7 @@ namespace RainbowMage.OverlayPlugin.MemoryProcessors.Combatant
             [FieldOffset(0x19DF)]
             public byte AggressionStatus;
 
-            [FieldOffset(0x1A88)]
+            [FieldOffset(0x1AB8)]
             public uint NPCTargetID;
 
             [FieldOffset(0x1AD8)]
@@ -220,7 +220,7 @@ namespace RainbowMage.OverlayPlugin.MemoryProcessors.Combatant
             [FieldOffset(0x1B0A)]
             public byte WeaponId;
 
-            [FieldOffset(0x1B68)]
+            [FieldOffset(0x1B88)]
             public fixed byte Effects[EffectBytes];
 
             [FieldOffset(0x1CF0)]
