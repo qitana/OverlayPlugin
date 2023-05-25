@@ -188,10 +188,10 @@ namespace RainbowMage.OverlayPlugin.MemoryProcessors.Combatant
             [FieldOffset(0x1DC)]
             public short TransformationId;
 
-            [FieldOffset(0x1E0)]
+            [FieldOffset(0x1E2)]
             public byte Job;
 
-            [FieldOffset(0x1E1)]
+            [FieldOffset(0x1E3)]
             public byte Level;
 
             [FieldOffset(0xC80)]
